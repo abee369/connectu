@@ -1,0 +1,13 @@
+<h3>Attend</h3>
+
+<p><%= @error %></p>
+
+<%= form_for @attendance do |f| %>
+<ul>
+  <li><%= f.label :first_name, 'First Name:' %></li>
+  <li><%= f.text_field :first_name %></li>
+  <li><%= f.label :last_name, 'Last Name:' %></li>
+  <li><%= f.text_field :last_name %></li>
+  <li><%= f.submit 'Attend' %></li>
+</ul>
+<% end %>	

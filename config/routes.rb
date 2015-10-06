@@ -43,6 +43,11 @@ Rails.application.routes.draw do
   put '/attendances/:id', to: 'attendances#update'
   delete '/attendances/:id', to: 'attendances#destroy'
 
+  get '/sessions/new', to:'sessions#new', as: 'login'
+  post '/sessions/create', to: 'sessions#create', as: 'signup_path'
+  delete 'log_out' => 'sessions#destroy'
+
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
