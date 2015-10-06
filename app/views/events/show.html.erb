@@ -1,0 +1,24 @@
+<p>
+  <strong>Title:</strong>
+  <%= @event.event_title %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @event.location %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @event.date %>
+</p>
+
+ <p>
+  <strong>Description:</strong>
+  <%= @event.description %>
+</p>
+
+
+
+<%= link_to 'Event Listing', events_path %>
+ <%= link_to 'Edit', edit_event_path(@event) %>
