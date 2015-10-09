@@ -36,6 +36,9 @@ gem 'bcrypt', '~> 3.1.7'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+#Use OmniAuth for Linkedin
+gem 'omniauth-linkedin-oauth2'
+
 group :production do
 	gem 'pg'
 	gem 'rails_12factor'
