@@ -21,6 +21,7 @@ class UsersController < ApplicationController
       redirect_to events_path
     else
       render 'new'
+      redirect_to events_path
     end
   end
 
