@@ -1,8 +1,13 @@
 class AttendancesController < ApplicationController
+	include UsersHelper
+
 	def index
-	    @attendance = Attendance.all
-	  end  
+	  @attendances = Attendance.all
+
+	end  
+
 	def show
+		user_list(@attendance)
 	  @attendance = Attendance.find(params[:id])
 	end
 
@@ -37,14 +42,18 @@ class AttendancesController < ApplicationController
 	def destroy
 	  @attendance = Attendance.find(params[:id])
 	  @attendance.destroy
-
 	  redirect_to attendances_path
 	end
 
 private
+# def attendance_params
+#  params.require(:attendance).permit(:first_name, :last_name)
+# end
+
 def attendance_params
- params.require(:attendance).permit(:first_name, :last_name)
+ params.require(:attendance).permit(:event_id, :reason)
 end
+
 
 
 
