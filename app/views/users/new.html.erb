@@ -1,0 +1,35 @@
+<h1>Sign Up</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for @user do |f| %>
+      <%= f.label :first_name %>
+      <%= f.text_field :first_name, class: 'form-control' %>
+
+      <%= f.label :last_name %>
+      <%= f.text_field :last_name, class: 'form-control' %>
+      
+      <%= f.label :company_name %>
+      <%= f.text_field :company_name, class: 'form-control' %>
+
+      <%= f.label :job_title %>
+      <%= f.text_field :job_title, class: 'form-control' %>
+
+      <%= f.label :contact_by %>
+      <%= f.text_field :contact_by, class: 'form-control' %>
+
+      <%= f.label :bio %>
+      <%= f.text_field :bio, class: 'form-control' %>
+
+      <%= f.label :email %>
+      <%= f.email_field :email, class: 'form-control' %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password, class: 'form-control' %>
+
+      <%= f.submit "Sign up", class: "btn btn-primary" %>
+    <% end %>
+
+    <p>Existing user? <%= link_to "Login", login_path %></p>
+  </div>
+</div>
