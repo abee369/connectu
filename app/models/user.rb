@@ -1,6 +1,8 @@
 class User < ActiveRecord::Base
-	has_many :attendances, :foreign_key => "user_id"
-	has_many :connections, :through=> :attendances
+	has_many :attendances
+	has_many :connections, :through => :attendances
+	has_many :events, :through => :attendances
+	has_many :users, :through => :connections, :as => :connected_user_id
 
 	validates :first_name, presence: true
 	validates :last_name, presence: true

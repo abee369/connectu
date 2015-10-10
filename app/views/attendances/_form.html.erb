@@ -1,0 +1,28 @@
+<h1>Choose</h1>
+
+<%= form_for :attendance, url: {controller: 'attendances' ,action: 'create'} do |f| %>
+
+
+<p>
+ <%f.label :event_id%><br>
+ <%= f.text_field :event_id %>
+</p>
+
+<p>
+ <select name="post[Purpose for Networking]">
+ <option>Please Select</option>
+ <option>General Networking</option>
+ <option>Hiring</option>
+ <option>Job Search</option>
+ <option>Other</option>
+</select>
+</p>
+
+<p>
+   <%= f.submit %>
+ </p>
+
+<% end %>
+
+
+<%= link_to 'Host an Event', new_event_path %>

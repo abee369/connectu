@@ -1,5 +1,7 @@
 class Attendance < ActiveRecord::Base
-	has_many :connections, :foreign_key => "attendance_id"
+	has_many :connections
+
 	belongs_to :event
+	belongs_to :user
 
 end

@@ -1,6 +1,7 @@
 class Event < ActiveRecord::Base
-	has_many :attendances, :foreign_key => "event_id"
-	belongs_to :attendance
+	has_many :attendances
+	has_many :users, :through => :attendances
+
   validates :event_title, presence: true 
 
 end
