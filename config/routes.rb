@@ -21,10 +21,6 @@ Rails.application.routes.draw do
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
-  # resources :users
-
-  
-  # delete 'log_out' => 'sessions#destroy'
 
   get '/events', to: 'events#index', as: 'events'
   get '/events/default', to: 'events#index_by_user', as: 'events_by_user'
@@ -54,9 +50,9 @@ Rails.application.routes.draw do
   put '/attendances/:id', to: 'attendances#update'
   delete '/attendances/:id', to: 'attendances#destroy'
 
-  get '/sessions/new', to:'sessions#new', as: 'login'
-  post '/sessions/create', to: 'sessions#create', as: 'signup_path'
-  delete 'log_out' => 'sessions#destroy'
+  # get '/sessions/new', to:'sessions#new', as: 'login'
+  # post '/sessions/create', to: 'sessions#create', as: 'signup_path'
+  # delete 'log_out' => 'sessions#destroy'
 
 
   # Example of regular route:

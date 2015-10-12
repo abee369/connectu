@@ -10176,3 +10176,1102 @@ Completed 200 OK in 102ms (Views: 101.2ms | ActiveRecord: 0.1ms)
 
 Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-08 21:38:36 -0500
 >>>>>>> f6f1db5ab5b8f58f9dd521c9b69c47a6d9501c3c
+
+
+Started GET "/" for ::1 at 2015-10-12 16:28:22 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 4619ms (Views: 4611.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 16:28:27 -0500
+
+
+Started GET "/" for ::1 at 2015-10-12 16:28:32 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 118ms (Views: 117.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 16:28:33 -0500
+
+
+Started GET "/signup" for ::1 at 2015-10-12 16:28:36 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 143ms (Views: 127.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for ::1 at 2015-10-12 16:29:23 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qQ+A/SVB31mtDhXnJsDcfwa4UpklepfbXpyYBGILguRzSv4/Zhv+inwIhRURDhiXMCLtOCPvCRS5e93NJAaN5Q==", "user"=>{"first_name"=>"Jeffrey ", "last_name"=>"Beach", "company_name"=>"A Fake Company", "job_title"=>"CEO", "contact_by"=>"Email", "bio"=>"What's going on, I'm Jeff!", "email"=>"218apps@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: company_name, job_title, contact_by, bio
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+ActiveRecord::UnknownAttributeError (unknown attribute 'password' for User.):
+  app/controllers/users_controller.rb:17:in `create'
+
+
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.2ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (48.7ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (99.7ms)
+
+
+Started GET "/" for ::1 at 2015-10-12 16:32:12 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 296ms (Views: 289.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-10-12 16:32:12 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 115ms (Views: 113.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 16:32:13 -0500
+
+
+Started GET "/signup" for ::1 at 2015-10-12 16:32:14 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 123ms (Views: 112.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for ::1 at 2015-10-12 16:32:33 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7w0u2rZDypEIaH2ZQkY9LfLXYqEm1L3jVVxB1aNRpto1SFAY9RnrQtlu7Wt1iPnFxE3dACBBIyyyuwQc5Vyp2w==", "user"=>{"first_name"=>"Jeff", "last_name"=>"Beach", "company_name"=>"218 Apps", "job_title"=>"CEO", "contact_by"=>"Email", "bio"=>"This is Jeff!", "email"=>"218apps@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: company_name, job_title, contact_by, bio
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = '218apps@gmail.com' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered users/new.html.erb within layouts/application (4.0ms)
+Redirected to 
+Completed 500 Internal Server Error in 191ms (Views: 110.5ms | ActiveRecord: 0.3ms)
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/users_controller.rb:24:in `create'
+
+
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.9ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.1ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (30.9ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.1ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (70.1ms)
+
+
+Started GET "/" for ::1 at 2015-10-12 16:33:29 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 300ms (Views: 293.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 16:33:29 -0500
+
+
+Started GET "/signup" for ::1 at 2015-10-12 16:33:32 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 135ms (Views: 115.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for ::1 at 2015-10-12 16:33:59 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pdiCWBW5Ox7Oqs5A/XTaGg9LjA/59u0vLV9AhkyF3Ep/nfyaVuMazR+sXrLKuh7yOdEzrv9jc+DKuAVPCojTSw==", "user"=>{"first_name"=>"Matt", "last_name"=>"Schaub", "company_name"=>"218 Apps", "job_title"=>"CEO", "contact_by"=>"Email", "bio"=>"This is Matt!", "email"=>"218apps@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: company_name, job_title, contact_by, bio
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = '218apps@gmail.com' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered users/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 171ms (Views: 94.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 16:34:00 -0500
+
+
+Started GET "/login" for ::1 at 2015-10-12 16:34:06 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 108ms (Views: 108.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 16:34:06 -0500
+
+
+Started POST "/login" for ::1 at 2015-10-12 16:34:14 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nePHEWj22h1LAx6/xVaqFix+xA4yK4OA6V0B76rYtH9HprnTK6z7zpoFjk3ymG7+GuR7rzS+HU8OukQm7NW7fg==", "session"=>{"email"=>"218apps@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "218apps@gmail.com"]]
+Redirected to http://localhost:3000/events
+Completed 302 Found in 81ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/events" for ::1 at 2015-10-12 16:34:14 -0500
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 109ms (Views: 106.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 16:34:14 -0500
+
+
+Started GET "/" for ::1 at 2015-10-12 16:37:26 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 103ms (Views: 102.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 16:37:26 -0500
+
+
+Started POST "/login" for ::1 at 2015-10-12 16:37:37 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o21367gRO5mQTAT82EBtM6EInF21pHJ390NUEaWjEXB5KAkp+0saSkFKlA7vjqnbl5Ij/LMx7LgQpBHY464ecQ==", "session"=>{"email"=>"218apps@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "218apps@gmail.com"]]
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 179ms (Views: 100.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 16:37:37 -0500
+
+
+Started GET "/signup" for ::1 at 2015-10-12 16:38:56 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 123ms (Views: 113.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 16:38:56 -0500
+
+
+Started POST "/users" for ::1 at 2015-10-12 16:39:20 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Gd+QRHkMyYI8n0YWWxi46yx9DpPRschF5L76s9crJ9DDmu6GOlboUe2Z1uRs1nwDGuexMtckVooDWb96kSYo0Q==", "user"=>{"first_name"=>"Alex", "last_name"=>"Nelson", "company_name"=>"218 Apps", "job_title"=>"CEO", "contact_by"=>"email", "bio"=>"This is Alex!", "email"=>"alex@me.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: company_name, job_title, contact_by, bio
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'alex@me.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Alex"], ["last_name", "Nelson"], ["email", "alex@me.com"], ["password_digest", "$2a$10$SKECCFLBJZmvnr0DPnzor.z6J3wg1UcCe/16TktYlSvYlnzebZoTe"], ["created_at", "2015-10-12 21:39:20.309583"], ["updated_at", "2015-10-12 21:39:20.309583"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/events
+Completed 302 Found in 78ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/events" for ::1 at 2015-10-12 16:39:20 -0500
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 114ms (Views: 111.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 16:39:20 -0500
+
+
+Started GET "/events" for ::1 at 2015-10-12 16:42:17 -0500
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.3ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 113ms (Views: 109.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-024cd03ea5eee4105f67e524ff581ab83b6311b39e4ec4407b7e5b840d30e1b9.css?body=1" for ::1 at 2015-10-12 16:42:17 -0500
+
+
+Started GET "/assets/attendances.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-12 16:42:17 -0500
+
+
+Started GET "/assets/connections.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-12 16:42:17 -0500
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-12 16:42:17 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-12 16:42:17 -0500
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-12 16:42:17 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-12 16:42:17 -0500
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 16:42:17 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-12 16:42:17 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-12 16:42:17 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2015-10-12 16:42:17 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2015-10-12 16:42:17 -0500
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2015-10-12 16:42:17 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2015-10-12 16:42:17 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2015-10-12 16:42:17 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2015-10-12 16:42:17 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2015-10-12 16:42:17 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2015-10-12 16:42:17 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2015-10-12 16:42:17 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2015-10-12 16:42:17 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2015-10-12 16:42:17 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2015-10-12 16:42:17 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-10-12 16:42:17 -0500
+
+
+Started GET "/assets/attendances.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-12 16:42:17 -0500
+
+
+Started GET "/assets/connections.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-12 16:42:17 -0500
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-12 16:42:17 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-12 16:42:17 -0500
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-12 16:42:17 -0500
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-10-12 16:42:17 -0500
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT  "events".* FROM "events" WHERE "events"."id" = NULL LIMIT 1[0m
+
+
+Started GET "/" for ::1 at 2015-10-12 16:52:24 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 303ms (Views: 295.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-024cd03ea5eee4105f67e524ff581ab83b6311b39e4ec4407b7e5b840d30e1b9.css?body=1" for ::1 at 2015-10-12 16:52:24 -0500
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-12 16:52:24 -0500
+
+
+Started GET "/assets/attendances.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-12 16:52:24 -0500
+
+
+Started GET "/assets/connections.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-12 16:52:24 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-12 16:52:24 -0500
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-12 16:52:24 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-12 16:52:24 -0500
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 16:52:24 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-12 16:52:24 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-12 16:52:24 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2015-10-12 16:52:24 -0500
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2015-10-12 16:52:24 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2015-10-12 16:52:24 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2015-10-12 16:52:24 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2015-10-12 16:52:24 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2015-10-12 16:52:24 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2015-10-12 16:52:24 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2015-10-12 16:52:24 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2015-10-12 16:52:24 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2015-10-12 16:52:24 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2015-10-12 16:52:24 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2015-10-12 16:52:24 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-10-12 16:52:24 -0500
+
+
+Started GET "/assets/attendances.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-12 16:52:24 -0500
+
+
+Started GET "/assets/connections.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-12 16:52:24 -0500
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-12 16:52:24 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-12 16:52:24 -0500
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-12 16:52:24 -0500
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-10-12 16:52:24 -0500
+
+
+Started POST "/login" for ::1 at 2015-10-12 16:52:30 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HgZWhPBwKvbzmNH98y+Re0of8A+0stjzhFlQTbM/yuvEQyhGsyoLJSKeQQ/E4VWTfIVPrrInRjxjvhWE9TLF6g==", "session"=>{"email"=>"218apps@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "218apps@gmail.com"]]
+Redirected to http://localhost:3000/events
+Completed 302 Found in 90ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/events" for ::1 at 2015-10-12 16:52:30 -0500
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.1ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 94ms (Views: 90.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 16:52:31 -0500
+
+
+Started GET "/events" for ::1 at 2015-10-12 16:52:41 -0500
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.2ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 123ms (Views: 122.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-024cd03ea5eee4105f67e524ff581ab83b6311b39e4ec4407b7e5b840d30e1b9.css?body=1" for ::1 at 2015-10-12 16:52:42 -0500
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-12 16:52:42 -0500
+
+
+Started GET "/assets/attendances.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-12 16:52:42 -0500
+
+
+Started GET "/assets/connections.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-12 16:52:42 -0500
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-12 16:52:42 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-12 16:52:42 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-12 16:52:42 -0500
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 16:52:42 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-12 16:52:42 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-12 16:52:42 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2015-10-12 16:52:42 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2015-10-12 16:52:42 -0500
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2015-10-12 16:52:42 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2015-10-12 16:52:42 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2015-10-12 16:52:42 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2015-10-12 16:52:42 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2015-10-12 16:52:42 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2015-10-12 16:52:42 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2015-10-12 16:52:42 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2015-10-12 16:52:42 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2015-10-12 16:52:42 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2015-10-12 16:52:42 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-10-12 16:52:42 -0500
+
+
+Started GET "/assets/attendances.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-12 16:52:42 -0500
+
+
+Started GET "/assets/connections.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-12 16:52:42 -0500
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-12 16:52:42 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-12 16:52:42 -0500
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-12 16:52:42 -0500
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-10-12 16:52:42 -0500
+
+
+Started GET "/events/new" for ::1 at 2015-10-12 16:52:47 -0500
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (8.2ms)
+  Rendered events/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 119ms (Views: 118.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events" for ::1 at 2015-10-12 16:53:18 -0500
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b9G8cuo+QnRXYz7KZj32HQq04H8W3XVKlZjKHMWYY/m1lMKwqWRjp4ZlrjhR8zL1PC5f3hBI64Vyf4/Vg5Vs+A==", "event"=>{"event_title"=>"Cubs vs Cardinals", "location"=>"Wrigley Field", "date"=>"2015-10-12", "description"=>"Jake Arrieta domination!!"}, "commit"=>"Create Event"}
+Completed 400 Bad Request in 6ms (ActiveRecord: 0.0ms)
+
+ActionController::ParameterMissing (param is missing or the value is empty: attendance):
+  app/controllers/events_controller.rb:70:in `attend_params'
+  app/controllers/events_controller.rb:31:in `create'
+
+
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (42.3ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (33.6ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (75.2ms)
+
+
+Started GET "/" for ::1 at 2015-10-12 16:53:29 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 105ms (Views: 104.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 16:53:29 -0500
+
+
+Started POST "/login" for ::1 at 2015-10-12 16:53:39 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8G1Dyhm8hftYVp+LG/XugLr/QiFr6ojco//LOUsALxwqKD0IWuakKIlQD3ksOypojGX9gG1/FhNEGI7wDQ0gHQ==", "session"=>{"email"=>"218apps@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "218apps@gmail.com"]]
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 175ms (Views: 98.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 16:53:39 -0500
+
+
+Started POST "/login" for ::1 at 2015-10-12 16:53:56 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5PupfXJXbXuVuPNvjZ4XSC70c3bjfsGua90TuUNguTY+vte/MQ1MqES+Y526UNOgGG7M1+XrX2GMOlZwBW22Nw==", "session"=>{"email"=>"218apps@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "218apps@gmail.com"]]
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 158ms (Views: 97.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 16:53:56 -0500
+
+
+Started GET "/" for ::1 at 2015-10-12 17:05:22 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 294ms (Views: 287.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 17:05:22 -0500
+
+
+Started GET "/" for ::1 at 2015-10-12 17:05:26 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 122ms (Views: 121.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-024cd03ea5eee4105f67e524ff581ab83b6311b39e4ec4407b7e5b840d30e1b9.css?body=1" for ::1 at 2015-10-12 17:05:26 -0500
+
+
+Started GET "/assets/attendances.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-12 17:05:26 -0500
+
+
+Started GET "/assets/connections.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-12 17:05:26 -0500
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-12 17:05:26 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-12 17:05:26 -0500
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-12 17:05:26 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-12 17:05:26 -0500
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 17:05:26 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-12 17:05:26 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-12 17:05:26 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2015-10-12 17:05:26 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2015-10-12 17:05:26 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2015-10-12 17:05:26 -0500
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2015-10-12 17:05:26 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2015-10-12 17:05:26 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2015-10-12 17:05:26 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2015-10-12 17:05:26 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2015-10-12 17:05:26 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2015-10-12 17:05:26 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2015-10-12 17:05:26 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2015-10-12 17:05:26 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2015-10-12 17:05:26 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-10-12 17:05:26 -0500
+
+
+Started GET "/assets/attendances.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-12 17:05:26 -0500
+
+
+Started GET "/assets/connections.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-12 17:05:26 -0500
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-12 17:05:26 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-12 17:05:26 -0500
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-12 17:05:26 -0500
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-10-12 17:05:26 -0500
+
+
+Started GET "/" for ::1 at 2015-10-12 17:05:30 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 106ms (Views: 105.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 17:05:30 -0500
+
+
+Started POST "/login" for ::1 at 2015-10-12 17:05:39 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x8oMHmA1uQ7FopQStvN29XxCCfqZlyp7P2fbdJGWRUsdj3LcI2+Y3RSkBOCBPbIdSti2W58CtLTYgJ6915tKSg==", "session"=>{"email"=>"alex@me.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "alex@me.com"]]
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 173ms (Views: 97.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 17:05:39 -0500
+
+
+Started GET "/signup" for ::1 at 2015-10-12 17:05:43 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 103ms (Views: 102.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 17:05:43 -0500
+
+
+Started POST "/users" for ::1 at 2015-10-12 17:06:05 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iENlxoYXqO0zQUIcnep23AS5pAyyExzjMrOXmyZUlJZSBhsExU2JPuJH0u6qJLI0MiMbrbSGgizVVNJSYFmblw==", "user"=>{"first_name"=>"Alex", "last_name"=>"Nelson", "company_name"=>"Jetwolfe Labs", "job_title"=>"CEO", "contact_by"=>"Email", "bio"=>"This is a bio!", "email"=>"alex@mail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: company_name, job_title, contact_by, bio
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'alex@mail.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "Alex"], ["last_name", "Nelson"], ["email", "alex@mail.com"], ["password_digest", "$2a$10$52/0it/G39Y5TwHmNO2HQ.L.o09yl7CvsUG84d1B45lU4aj4JMdkK"], ["created_at", "2015-10-12 22:06:05.213414"], ["updated_at", "2015-10-12 22:06:05.213414"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/events
+Completed 302 Found in 76ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/events" for ::1 at 2015-10-12 17:06:05 -0500
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.2ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 112ms (Views: 108.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 17:06:05 -0500
+
+
+Started GET "/" for ::1 at 2015-10-12 17:22:48 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (11.8ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+Completed 500 Internal Server Error in 339ms (ActiveRecord: 0.9ms)
+
+ActionView::Template::Error (undefined method `username' for #<User:0x007fb7475619a8>):
+    11: <%= yield %>
+    12: 
+    13: <% if current_user %>
+    14:   <p>Welcome <%= current_user.username %></p>
+    15:   <%= link_to 'Logout', log_out_path, method: 'delete' %>
+    16: <% else %>
+    17:   <%= link_to 'Login', sessions_new_path %> or <%= link_to 'Signup', users_new_path %>
+  app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__1075291830995295280_70212559907540'
+
+
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (40.9ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (37.3ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (82.6ms)
+
+
+Started GET "/" for ::1 at 2015-10-12 17:24:08 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (10.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+Completed 500 Internal Server Error in 326ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined local variable or method `log_out_path' for #<#<Class:0x007fa111e82920>:0x007fa111e81660>):
+    12: 
+    13: <% if current_user %>
+    14:   <p>Welcome <%= current_user%></p>
+    15:   <%= link_to 'Logout', log_out_path, method: 'delete' %>
+    16: <% else %>
+    17:   <%= link_to 'Login', sessions_new_path %> or <%= link_to 'Signup', users_new_path %>
+    18: <% end %>
+  app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb___3159100647432425325_70164883234740'
+
+
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.1ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (43.8ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (32.3ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (79.0ms)
+
+
+Started GET "/" for ::1 at 2015-10-12 17:26:53 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (10.2ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+Completed 200 OK in 317ms (Views: 309.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 17:26:54 -0500
+
+
+Started GET "/" for ::1 at 2015-10-12 17:27:25 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+Completed 200 OK in 109ms (Views: 108.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 17:27:25 -0500
+
+
+Started DELETE "/logout" for ::1 at 2015-10-12 17:27:28 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Z6nkWzy4svCGCqGm9SbR0xO8A/UvmSkrz8ejRALrJB297JqZf+KTI1cMMVTC6BU7JSa8VCkMt+QoIOaNROYrHA=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-10-12 17:27:28 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Completed 500 Internal Server Error in 110ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined local variable or method `sessions_new_path' for #<#<Class:0x007fd15bb550e8>:0x007fd1628e9eb0>):
+    13: <% if current_user %>
+    14:   <%= link_to 'Logout', logout_path, method: 'delete' %>
+    15: <% else %>
+    16:   <%= link_to 'Login', sessions_new_path %> or <%= link_to 'Signup', users_new_path %>
+    17: <% end %>
+    18: 
+    19: </body>
+  app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___3806901465287495703_70268635717560'
+
+
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.9ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (37.2ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (85.8ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started GET "/" for ::1 at 2015-10-12 17:35:49 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (15.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Completed 500 Internal Server Error in 343ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined local variable or method `sessions_new_path' for #<#<Class:0x007f85341c43d0>:0x007f85341bf0b0>):
+    11: <% if current_user %>
+    12:   <%= link_to 'Logout', logout_path, method: 'delete' %>
+    13: <% else %>
+    14:   <%= link_to 'Login', sessions_new_path %> or <%= link_to 'Signup', users_new_path %>
+    15: <% end %>
+    16: 
+    17: <%= yield %>
+  app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___3332020923646000982_70105040611960'
+
+
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.5ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (39.9ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (91.6ms)
+
+
+Started GET "/" for ::1 at 2015-10-12 17:35:50 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Completed 500 Internal Server Error in 113ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined local variable or method `sessions_new_path' for #<#<Class:0x007f85341c43d0>:0x007f853c822b98>):
+    11: <% if current_user %>
+    12:   <%= link_to 'Logout', logout_path, method: 'delete' %>
+    13: <% else %>
+    14:   <%= link_to 'Login', sessions_new_path %> or <%= link_to 'Signup', users_new_path %>
+    15: <% end %>
+    16: 
+    17: <%= yield %>
+  app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___3332020923646000982_70105040611960'
+
+
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (43.4ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (36.5ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/alexandernelson/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (78.9ms)
+
+
+Started GET "/" for ::1 at 2015-10-12 17:37:09 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Completed 200 OK in 105ms (Views: 104.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-024cd03ea5eee4105f67e524ff581ab83b6311b39e4ec4407b7e5b840d30e1b9.css?body=1" for ::1 at 2015-10-12 17:37:09 -0500
+
+
+Started GET "/assets/connections.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-12 17:37:09 -0500
+
+
+Started GET "/assets/attendances.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-12 17:37:09 -0500
+
+
+Started GET "/assets/events.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-12 17:37:09 -0500
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-12 17:37:09 -0500
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-12 17:37:09 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-12 17:37:09 -0500
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 17:37:09 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-12 17:37:09 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-12 17:37:09 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2015-10-12 17:37:09 -0500
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2015-10-12 17:37:09 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2015-10-12 17:37:09 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2015-10-12 17:37:09 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2015-10-12 17:37:09 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2015-10-12 17:37:09 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2015-10-12 17:37:09 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2015-10-12 17:37:09 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2015-10-12 17:37:09 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2015-10-12 17:37:09 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2015-10-12 17:37:09 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2015-10-12 17:37:09 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-10-12 17:37:09 -0500
+
+
+Started GET "/assets/attendances.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-12 17:37:09 -0500
+
+
+Started GET "/assets/connections.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-12 17:37:09 -0500
+
+
+Started GET "/assets/events.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-12 17:37:09 -0500
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-12 17:37:09 -0500
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-12 17:37:09 -0500
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-10-12 17:37:09 -0500
+
+
+Started POST "/login" for ::1 at 2015-10-12 17:37:22 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Dv1/Yu6rH/CuTlmPhXkio0jthlNXKUfVNpZGJH/E5azUuAGgrfE+I39IyX2yt+ZLfnc58lG82RrRcQPtOcnqrQ==", "session"=>{"email"=>"alex@me.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "alex@me.com"]]
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Completed 200 OK in 167ms (Views: 96.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 17:37:22 -0500
+
+
+Started GET "/signup" for ::1 at 2015-10-12 17:37:30 -0500
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+Completed 200 OK in 99ms (Views: 98.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 17:37:30 -0500
+
+
+Started POST "/users" for ::1 at 2015-10-12 17:38:08 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RYR1bZu1l2D0L4aDm/XVqP2VaEdGgmR5aN7bvw9O8GqfwQuv2O+2syUpFnGsOxFAyw/X5kAX+raPOZ52SUP/aw==", "user"=>{"first_name"=>"Alex", "last_name"=>"Nelson", "company_name"=>"Jetwolfe Labs", "job_title"=>"CEO", "contact_by"=>"Email", "bio"=>"This is Alex!", "email"=>"alex@jetwolfelabs.com", "password"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: company_name, job_title, contact_by, bio
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'alex@jetwolfelabs.com' LIMIT 1[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["first_name", "Alex"], ["last_name", "Nelson"], ["email", "alex@jetwolfelabs.com"], ["password_digest", "$2a$10$W2KzD1osSf8f9AKFakhiXOgkrQUdh/l3lp0WyKg11X2yMsWrYEL82"], ["created_at", "2015-10-12 22:38:08.931900"], ["updated_at", "2015-10-12 22:38:08.931900"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/events
+Completed 302 Found in 80ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/events" for ::1 at 2015-10-12 17:38:08 -0500
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+Completed 200 OK in 106ms (Views: 103.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 17:38:09 -0500
+
+
+Started DELETE "/logout" for ::1 at 2015-10-12 17:38:11 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SiNo4MejQPTHB4bHjQQ8P8NQrpjxUbPcevnBDN2qB8qQZhYihPlhJxYBFjW6yvjX9coROffELROdHoTFm6cIyw=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-10-12 17:38:11 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Completed 200 OK in 122ms (Views: 121.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 17:38:11 -0500
+
+
+Started POST "/login" for ::1 at 2015-10-12 17:38:55 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cDN/HJDYalCYqww63OQkukvWl09KXpmMhObCC5w6QgSqdgHe04JLg0mtnMjrKuBSfUwo7kzLB0NjAYfC2jdNBQ==", "session"=>{"email"=>"alex@me.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "alex@me.com"]]
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+Completed 200 OK in 164ms (Views: 98.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 17:38:56 -0500
+
+
+Started POST "/login" for ::1 at 2015-10-12 17:39:27 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NZ1c6EWrJznZfsPpUJxVWys+EfVh0Cbwisx5Lpl9nLTv2CIqBvEG6gh4UxtnUpGzHaSuVGdFuD9tKzzn33CTtQ==", "session"=>{"email"=>"alex@jetwolfelabs.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "alex@jetwolfelabs.com"]]
+Redirected to http://localhost:3000/events
+Completed 302 Found in 60ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/events" for ::1 at 2015-10-12 17:39:27 -0500
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.1ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+Completed 200 OK in 109ms (Views: 107.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-10-12 17:39:27 -0500
