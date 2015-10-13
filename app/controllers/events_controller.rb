@@ -19,7 +19,6 @@ end
 
 def new 
   @event = Event.new 
-
 end
 
 def edit
@@ -28,7 +27,7 @@ end
 
 def create
   @event = Event.new(event_params)
-  @attendance = Attendance.new(attend_params)
+  @attendance = Attendance.create
 
   if @event.save
    redirect_to @event
@@ -66,9 +65,9 @@ end
      params.require(:event).permit(:event_title, :location, :date, :description)
   end
 
-  def attend_params
-    params.require(:attendance).permit(:user_id, :option)
-  end
+  # def attend_params
+  #   params.require(:attendance).permit(:user_id)
+  # end
 
 
 

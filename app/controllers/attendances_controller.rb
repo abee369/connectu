@@ -43,14 +43,14 @@ class AttendancesController < ApplicationController
 	def destroy
 	  @attendance = Attendance.find(params[:id])
 	  @attendance.destroy
-	  redirect_to attendances_path
+	  redirect_to events_by_user_path
 	end
 
 private
 
 
 def attendance_params
- params.require(:attendance).permit(:event_id, :user_id, :reason)
+ params.require(:attendance).permit(:event_id, :user_id, :reason, :host)
 end
 # def user_params
 #  params.require(:user).permit(:user_id)
