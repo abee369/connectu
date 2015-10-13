@@ -11,7 +11,7 @@ def index
 end
 
 def index_by_user
-    @attendance = Attendance.new
+    # @attendance = Attendance.new
     @user = User.find(session[:user_id])
     @events = @user.events
   end  
@@ -69,7 +69,7 @@ end
   end
 
   def attend_params
-    params.require(:attendance).permit(:event_id, :option)
+    params.require(:attendance).permit(:user_id, :option)
   end
 
 

@@ -9,9 +9,8 @@
   <% @events.each do |event| %>
     <tr>
     	<td> <%= event.event_title %></td>
-      <td><%= link_to  'Show', attendance_path(attendance) %></td>
-       <td><%= link_to 'Edit', attendance_path(attendance) %></td>
-       <td><%= link_to 'Destroy', attendance_path(attendance),
+      <td><%= link_to  'Show the event', event_path(event) %></td>
+       <td><%= link_to 'Unregister from the event', attendance_path(attendance),
                 method: :delete, 
                 data: { confirm: 'Are you sure?' } %></td>
       
