@@ -1,5 +1,4 @@
 class AttendancesController < ApplicationController
-	include UsersHelper
 
 	def index
 	  @attendances = Attendance.all
@@ -7,7 +6,8 @@ class AttendancesController < ApplicationController
 	end  
 
 	def show
-		user_list(@attendance)
+		@user = User.find(session[:user_id])
+		@events = @user.events
 	  @attendance = Attendance.find(params[:id])
 	end
 
@@ -46,9 +46,6 @@ class AttendancesController < ApplicationController
 	end
 
 private
-# def attendance_params
-#  params.require(:attendance).permit(:first_name, :last_name)
-# end
 
 def attendance_params
  params.require(:attendance).permit(:event_id, :reason)
