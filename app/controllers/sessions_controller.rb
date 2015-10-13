@@ -13,6 +13,9 @@ class SessionsController < ApplicationController
       render 'new'
     end
 
+  end
+
+  def linkedin
     begin
       @user = User.from_omniauth(request.env['omniauth.auth'])
       session[:user_id] = @user.id
@@ -24,7 +27,7 @@ class SessionsController < ApplicationController
   end
 
   def auth_failure
-   redirect_to root_path
+    redirect_to root_path
   end
 
   def destroy
