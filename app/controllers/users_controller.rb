@@ -18,7 +18,7 @@ class UsersController < ApplicationController
     p @user
     if @user.save
       session[:user_id] = @user.id
-      redirect_to events_path
+      redirect_to events_by_user_path
     else
       render 'new'
     end
