@@ -10,8 +10,6 @@
 </p>
 
 <p>
-
-
 <%= f.select(:reason) do %>
   <% [['General Networking', 1], ['Hiring', 2], ['Job Search', 3]].each do |c| -%>
     <%= content_tag(:option, c.first, value: c.last) %>
@@ -20,7 +18,7 @@
 
 </p>
 
-
+<%= f.hidden_field :host, :value => false %>
 <p>
    <%= f.submit %>
  </p>
