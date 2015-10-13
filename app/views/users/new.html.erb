@@ -2,7 +2,7 @@
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-    <%= form_for(@user) do |f| %>
+    <%= form_for @user do |f| %>
       <%= f.label :first_name %>
       <%= f.text_field :first_name, class: 'form-control' %>
 
@@ -16,7 +16,17 @@
       <%= f.text_field :job_title, class: 'form-control' %>
 
       <%= f.label :contact_by %>
-      <%= f.text_field :contact_by, class: 'form-control' %>
+      <p>
+       <select name="post[Contact by]">
+       <option>Please Select</option>
+       <option>Email</option>
+       <option>Phone</option>
+      </select>
+      </p>
+
+      <%= f.label :phone %>
+      <%= f.text_field :phone, class: 'form-control' %>
+
 
       <%= f.label :bio %>
       <%= f.text_field :bio, class: 'form-control' %>
@@ -24,8 +34,24 @@
       <%= f.label :email %>
       <%= f.email_field :email, class: 'form-control' %>
 
-      <%= f.label :password %>
-      <%= f.password_field :password, class: 'form-control' %>
+      <li><%= f.label :password, 'Password:' %></li>
+      <% if @user.errors.any? %>
+        <ul>
+        <% @user.errors.messages[:password].each do |error| %>
+          <li>Password <%= error %></li>
+        <% end %>
+        </ul>
+      <% end %>
+      <li><%= f.password_field :password %></li>
+      <li><%= f.label :password_confirmation, 'Confirm your password:' %></li>
+        <% if @user.errors.any? %>
+          <ul>
+          <% @user.errors.messages[:password_confirmation].each do |error| %>
+            <li>Password confirmation <%= error %></li>
+          <% end %>
+          </ul>
+        <% end %>
+      <li><%= f.password_field :password_confirmation %></li>
 
       <%= f.submit "Sign up", class: "btn btn-primary" %>
     <% end %>

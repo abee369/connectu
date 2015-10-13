@@ -3,6 +3,17 @@ class EventsController < ApplicationController
 
 def index
     @events = Event.all
+
+    # @attendance = Attendance.new
+    # @user = User.find(session[:user_id])
+    # @event = Attendance.map 
+    # @event = @user.events
+end
+
+def index_by_user
+    @attendance = Attendance.new
+    @user = User.find(session[:user_id])
+    @events = @user.events
   end  
 def show
   @event = Event.find(params[:id])
@@ -10,6 +21,7 @@ end
 
 def new 
   @event = Event.new 
+
 end
 
 def edit
@@ -18,12 +30,20 @@ end
 
 def create
   @event = Event.new(event_params)
+  @attendance = Attendance.new(attend_params)
 
   if @event.save
    redirect_to @event
   else
     render 'new' 
   end
+
+  # if @attendance.save
+  #  redirect_to @attendance
+  # else
+  #   render 'index_by_user' 
+  # end
+
 end
 
 def update
@@ -46,6 +66,10 @@ end
   private
   def event_params
      params.require(:event).permit(:event_title, :location, :date, :description)
+  end
+
+  def attend_params
+    params.require(:attendance).permit(:event_id, :option)
   end
 
 
