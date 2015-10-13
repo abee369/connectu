@@ -6,10 +6,10 @@
 <%= link_to 'New attendance', new_attendance_path %>
 <table>
 
-  <% @events.each do |event| %>
+  <% @user.attendances.each do |attendance| %>
     <tr>
-    	<td> <%= event.event_title %></td>
-      <td><%= link_to  'Show the event', event_path(event) %></td>
+    	<td> <%= attendance.event.event_title %></td>
+      <td><%= link_to  'Show the event', event_path(attendance.event) %></td>
        <td><%= link_to 'Unregister from the event', attendance_path(attendance),
                 method: :delete, 
                 data: { confirm: 'Are you sure?' } %></td>
