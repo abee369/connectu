@@ -21,6 +21,7 @@ class AttendancesController < ApplicationController
 
 	def create
 	  @attendance = Attendance.new(attendance_params)
+	  @attendance.user = User.find(session[:user_id])
 
 	  if @attendance.save
 	   redirect_to @attendance
@@ -47,11 +48,21 @@ class AttendancesController < ApplicationController
 
 private
 
+
 def attendance_params
- params.require(:attendance).permit(:event_id, :reason)
+ params.require(:attendance).permit(:event_id, :user_id, :reason)
+end
+# def user_params
+#  params.require(:user).permit(:user_id)
+# end
+
 end
 
+  # @event = Event.new(event_params)
+  # @attendance = Attendance.new(attend_params)
 
-
-
-end
+  # if @event.save
+  #  redirect_to @event
+  # else
+  #   render 'new' 
+  # end
