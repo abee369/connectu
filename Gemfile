@@ -59,4 +59,5 @@ group :development do
 end
 ruby "2.2.1"
 gem 'puma'
+gem 'figaro'
 
