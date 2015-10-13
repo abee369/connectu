@@ -12,6 +12,8 @@ end
 
 def index_by_user
     @attendance = Attendance.new
+    @user = User.find(session[:user_id])
+    @events = @user.events
   end  
 def show
   @event = Event.find(params[:id])
