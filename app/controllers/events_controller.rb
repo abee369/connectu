@@ -20,9 +20,6 @@ class EventsController < ApplicationController
     @event = Event.find(params[:id])
     @user = User.find(session[:user_id])
     @users = @user.connected_users
-
-#narrow attendance
-
   end
 
   def new
@@ -75,7 +72,7 @@ class EventsController < ApplicationController
   end
 
   def attend_params
-    params.require(:attendance).permit(:event_id, :option)
+    params.require(:attendance).permit(:user_id, :option)
   end
 
 

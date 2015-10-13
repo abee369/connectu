@@ -17,11 +17,11 @@
 
       <%= f.label :contact_by %>
       <p>
-       <select name="post[Contact by]">
-       <option>Please Select</option>
-       <option>Email</option>
-       <option>Phone</option>
-      </select>
+        <%= f.select(:contact_by) do %>
+          <% [['Email', 1], ['Phone', 2]].each do |c| -%>
+            <%= content_tag(:option, c.first, value: c.last) %>
+          <% end %>
+        <% end %>
       </p>
 
       <%= f.label :phone %>

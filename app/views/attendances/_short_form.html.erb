@@ -10,14 +10,16 @@
 </p>
 
 <p>
- <select name="post[Purpose for Networking]">
- <option>Please Select</option>
- <option>General Networking</option>
- <option>Hiring</option>
- <option>Job Search</option>
- <option>Other</option>
-</select>
+
+
+<%= f.select(:reason) do %>
+  <% [['General Networking', 1], ['Hiring', 2], ['Job Search', 3]].each do |c| -%>
+    <%= content_tag(:option, c.first, value: c.last) %>
+  <% end %>
+<% end %>
+
 </p>
+
 
 <p>
    <%= f.submit %>
