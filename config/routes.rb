@@ -20,7 +20,8 @@ Rails.application.routes.draw do
   get    'signup'  => 'users#new'
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
-  delete 'logout'  => 'sessions#destroy'
+  delete 'logout'  => 'sessions#destroy', as: 'logout'
+  get '/log_me_out', to: 'sessions#log_me_out'
 
   get '/events', to: 'events#index', as: 'events'
   get '/events/default', to: 'events#index_by_user', as: 'events_by_user'

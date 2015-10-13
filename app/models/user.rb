@@ -3,7 +3,10 @@ class User < ActiveRecord::Base
   has_many :attendances
   has_many :connections, :through => :attendances
   has_many :events, :through => :attendances
-  has_many :users, :through => :connections, :as => :connected_user_id
+  has_many :connected_users, :through => :connections, source: :user
+  has_many :users, :through => :connections, foreign_key: "connected_users"
+  # has_many :connections, foreign_key: "connected_user_id"
+
   has_secure_password
 
   def password

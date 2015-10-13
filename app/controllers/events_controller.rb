@@ -1,71 +1,77 @@
 class EventsController < ApplicationController
 
 
-def index
+  def index
     @events = Event.all
 
     # @attendance = Attendance.new
     # @user = User.find(session[:user_id])
-    # @event = Attendance.map 
+    # @event = Attendance.map
     # @event = @user.events
-end
+  end
 
-def index_by_user
+  def index_by_user
     @attendance = Attendance.new
     @user = User.find(session[:user_id])
     @events = @user.events
-  end  
-def show
-  @event = Event.find(params[:id])
-end
-
-def new 
-  @event = Event.new 
-
-end
-
-def edit
-  @event = Event.find(params[:id])
-end
-
-def create
-  @event = Event.new(event_params)
-  @attendance = Attendance.new(attend_params)
-
-  if @event.save
-   redirect_to @event
-  else
-    render 'new' 
   end
 
-  # if @attendance.save
-  #  redirect_to @attendance
-  # else
-  #   render 'index_by_user' 
-  # end
+  def show
+    @event = Event.find(params[:id])
+    @user = User.find(session[:user_id])
+    @users = @user.connected_users
 
-end
+#narrow attendance
 
-def update
-  @event = Event.find(params[:id])
-
-  if @event.update(event_params)
-    redirect_to @event
-  else
-    render 'edit'
   end
-end
 
-def destroy
-  @event = Event.find(params[:id])
-  @event.destroy
+  def new
+    @event = Event.new
 
-  redirect_to events_path
-end
+  end
+
+  def edit
+    @event = Event.find(params[:id])
+  end
+
+  def create
+    @event = Event.new(event_params)
+    @attendance = Attendance.new(attend_params)
+
+    if @event.save
+      redirect_to @event
+    else
+      render 'new'
+    end
+
+    # if @attendance.save
+    #  redirect_to @attendance
+    # else
+    #   render 'index_by_user'
+    # end
+
+  end
+
+  def update
+    @event = Event.find(params[:id])
+
+    if @event.update(event_params)
+      redirect_to @event
+    else
+      render 'edit'
+    end
+  end
+
+  def destroy
+    @event = Event.find(params[:id])
+    @event.destroy
+
+    redirect_to events_path
+  end
 
   private
   def event_params
-     params.require(:event).permit(:event_title, :location, :date, :description)
+    params.require(:event).permit(:event_title, :location, :date, :description)
   end
 
   def attend_params

@@ -30,6 +30,11 @@ class SessionsController < ApplicationController
     redirect_to root_path
   end
 
+  def log_me_out
+
+  end
+
+
   def destroy
     log_out
     redirect_to root_url
