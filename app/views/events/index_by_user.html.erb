@@ -1,5 +1,4 @@
-
-   <%= render partial: "attendances/short_form.html.erb" %>
+c<%= render partial: "attendances/short_form.html.erb" %>
 
 
 <% if @user.events.present? %>
@@ -15,7 +14,6 @@
          <td><%= link_to 'Unregister from the event', attendance_path(attendance),
                   method: :delete, 
                   data: { confirm: 'Are you sure?' } %></td>
-        
       </tr>
     <% end %>
   </table>

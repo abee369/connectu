@@ -24,7 +24,7 @@ class AttendancesController < ApplicationController
 	  @attendance.user = User.find(session[:user_id])
 
 	  if @attendance.save
-	   redirect_to @attendance
+	  redirect_to events_by_user_path
 	  else
 	    render 'new' 
 	  end

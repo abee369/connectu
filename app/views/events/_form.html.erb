@@ -33,6 +33,9 @@
     <%= f.label :description %><br>
     <%= f.text_area :description %>
   </p>
+
+  <%= f.hidden_field :host, :value => false %>
+
   <p>
     <%= f.submit %>
   </p>
