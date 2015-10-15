@@ -1,4 +1,9 @@
-<%= form_for @event do |f| %>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+<div class="form-group">
+  <h1>New Event</h1>
+
+<%= form_for @event ,:html => { :class => 'form-horizontal'} do |f| %>
 
   <% if @event.errors.any? %>
     <div id="error_explanation">
@@ -16,28 +21,33 @@
 
   <p>
     <%= f.label :event_title %><br>
-    <%= f.text_field :event_title %>
+    <%= f.text_field :event_title,class: 'form-control' %>
   </p>
 
   <p>
     <%= f.label :location %><br>
-    <%= f.text_area :location %>
+    <%= f.text_area :location,class: 'form-control' %>
   </p>
 
 <p>
     <%= f.label :date %><br>
-    <%= f.date_field :date %>
+    <%= f.date_field :date,class: 'form-control' %>
   </p>
 
   <p>
     <%= f.label :description %><br>
-    <%= f.text_area :description %>
+    <%= f.text_area :description,class: 'form-control' %>
   </p>
 
   <%= f.hidden_field :host, :value => false %>
 
   <p>
-    <%= f.submit %>
+    <%= f.submit "New Event", :class => "btn btn-info btn-sm"%>
   </p>
 
 <% end %>
+</div>
+  </div>
+
+
+</div>
