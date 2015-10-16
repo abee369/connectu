@@ -1,11 +1,17 @@
 <table>
-  <% @users.each do |user| %>
+  <% @event.attendances.each do |attendance| %>
     <tr>
-      <td><%= user.first_name %></td>
-      <td><%= user.last_name %></td>
-      <td><%= user.company_name %></td>
-      <td><%= user.job_title %></td>
+      <td><%= attendance.user.first_name %></td>
+      <td><%= attendance.user.last_name %></td>
+      <td><%= attendance.user.company_name %></td>
+      <td><%= attendance.user.job_title %></td>
 
+      <%= form_for(@connection) do |f| %>
+      <%= f.hidden_field :connected_user_id%>
+
+        <% end %>
     </tr>
   <% end %>
 </table>
+
+<%= link_to 'Back', event_path(@event),class: "btn btn-small btn-success"  %>

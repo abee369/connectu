@@ -17,7 +17,7 @@ def index_by_user
 end  
 
 def users_by_event
-  @attendance = Attendance.new
+  @connection = Connection.new
   @event = Event.find(params[:id])
   @users = @event.users
 end
