@@ -25,6 +25,7 @@ Rails.application.routes.draw do
 
   get '/events', to: 'events#index', as: 'events'
   get '/events/default', to: 'events#index_by_user', as: 'events_by_user'
+  get '/events/:id/users', to: 'events#users_by_event', as: "users_by_event"
   get '/events/new', to: 'events#new', as: 'new_event'
   post '/events', to: 'events#create'
   get '/events/:id', to: 'events#show', as: 'event'
@@ -33,11 +34,7 @@ Rails.application.routes.draw do
   put '/events/:id', to: 'events#update'
   delete '/events/:id', to: 'events#destroy'
 
-  get '/connections', to: 'connections#index', as: 'connections'
-  get '/connections/new', to: 'connections#new', as: 'new_connection'
   post '/connections', to: 'connections#create'
-  get '/connections/:id', to: 'connections#show', as: 'connection'
-  get '/connections:id/edit', to: 'connections#edit', as: 'edit_connection'
   patch '/connections/:id', to: 'connections#update'
   put '/connections/:id', to: 'connections#update'
   delete '/connections/:id', to: 'connections#destroy'

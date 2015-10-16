@@ -1,7 +1,6 @@
 <div class="container">
     <div class="vertical-center-row">
         <div align="center">
-
 <p class="lead" >
   <strong>Event:</strong>
   <%= @event.event_title %>
@@ -23,19 +22,21 @@
 </p>
 
 <table>
+  <h4> My connections</h4>
+
   <tr>
     <th>First Name</th>
     <th>Last Name</th>
     <th>Company</th>
     <th>Title</th>
+    <th>Connect?</th>
+
     
   </tr>
 
-    <tr>
-      <td><%= @event_attendees %></td>  
-    </tr>
 </table>
 
+<td><%= link_to 'All the attendees', users_by_event_path(@event),class: "btn btn-small btn-success"  %></td>
 
 
 <%= link_to 'Home', events_by_user_path,class: "btn btn-small btn-success"  %>

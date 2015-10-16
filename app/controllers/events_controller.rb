@@ -11,13 +11,21 @@ def index
 end
 
 def index_by_user
+    @attendance = Attendance.new
     @user = User.find(session[:user_id])
-  end  
+    @events = @user.events
+end  
+
+def users_by_event
+  @attendance = Attendance.new
+  @event = Event.find(params[:id])
+  @users = @event.users
+end
+
 def show
   @event = Event.find(params[:id])
-  @event_attendees = @event.attendances
   @user = User.find(session[:user_id])
-
+  @users = @user.connected_users
 end
 
 def new 
@@ -30,7 +38,7 @@ end
 
 def create
   @event = Event.new(event_params)
-  @attendance = Attendance.create
+  @attendance = Attendance.new(attend_params)
 
   if @event.save
    redirect_to @event
@@ -68,9 +76,9 @@ end
      params.require(:event).permit(:event_title, :location, :date, :description)
   end
 
-  # def attend_params
-  #   params.require(:attendance).permit(:user_id)
-  # end
+  def attend_params
+    params.require(:attendance).permit(:event_id, :option)
+  end
 
 
 
