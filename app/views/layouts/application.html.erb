@@ -9,16 +9,20 @@
 <body>
 <div class="col-md-12">
 
+<div class="pull-left home-header">
+<%= link_to 'Home', welcome_path, class: "btn btn-small btn-primary" %>
+</div>
 
-
-<div class="pull-right">
+<div class="pull-right login-header">
 
 <% if current_user? %>
   <%= link_to 'Logout', logout_path, method: 'delete',class: "btn btn-small btn-primary"  %>
 <% else %>
 <div class="center-block">
   <%= link_to "Login", login_path,class: "btn btn-small btn-primary" %>  <%= link_to "Sign up now!", signup_path, class: "btn btn-small btn-primary"  %>
+
  </div>
+
 
 <% end %>
 

@@ -10,9 +10,9 @@
       <%= f.label :password %>
       <%= f.password_field :password, class: 'form-control' %>
 
-      <%= f.submit "Log in", class: "btn btn-primary" %>
+      <div class="login-footer"><%= f.submit "Log in", class: "btn btn-primary" %></div>
     <% end %>
 
-    <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+    <div class="signup-footer"><p>New user? <%= link_to "Sign up now!", signup_path %></p></div>
   </div>
 </div>
