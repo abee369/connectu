@@ -1,5 +1,4 @@
-
-   <%= render partial: "attendances/short_form.html.erb" %>
+<%= render partial: "attendances/short_form.html.erb" %>
 
 
 <% if @user.events.present? %>
@@ -7,15 +6,14 @@
 <h1>My Events Listing</h1>
 
   <table>
-
+    <th>Events</th>
     <% @user.attendances.each do |attendance| %>
       <tr>
       	<td> <%= attendance.event.event_title %></td>
-        <td><%= link_to  'Show the event', event_path(attendance.event) %></td>
-         <td><%= link_to 'Unregister from the event', attendance_path(attendance),
+        <td><%= link_to  'Show', event_path(attendance.event), class: "btn btn-info btn-xs" %></td>
+         <td><%= link_to 'Unregister', attendance_path(attendance),
                   method: :delete, 
-                  data: { confirm: 'Are you sure?' } %></td>
-        
+                  data: { confirm: 'Are you sure?'}, class: "btn btn-warning btn-xs" %></td>
       </tr>
     <% end %>
   </table>

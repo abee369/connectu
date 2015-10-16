@@ -1,28 +1,47 @@
-<h1>Choose</h1>
-<h2>Enter in event number</h2>
+<div class="row">
+  <div class="col-md-2 col-md-offset-3">
+	<div class="form-group">
+		<%= form_for :attendance, url: {controller: 'attendances' ,action: 'create'}, :html => { :class => 'form-horizontal'} do |f| %>
+			<div class="form-group">
+				<p>
+				 <%f.label :event_id%><br>
+				 <%= f.text_field :event_id, class: 'form-control', placeholder: 'Enter event #'  %>
+				</p>
+			</div>
 
-<%= form_for :attendance, url: {controller: 'attendances' ,action: 'create'} do |f| %>
+			<div class="form-group">
+				<%= f.select :reason,{class: "form-control"} do %>
+				  <% [['General Networking', 1], ['Hiring', 2], ['Job Search', 3]].each do |c| -%>
+				    <%= content_tag(:option, c.first, value: c.last) %>
+				  <% end %>
+				<% end %>
+			</div>
+			<div class="form-group">
+				<p>
+				   <%= f.submit "Attend", :class => "btn btn-warning btn-sm"%>
+				 </p>
+			</div>
+
+				<% end %>
+	</div>
+  </div>
+	<div class="col-md-1">
+		<div class="pull-left">
+			<div class="text-center">
+				
+			<p>Or</p>
+		</div>
+			</div>
+	</div>
+	<div class="col-md-1">
+		<div class="pull-left">
+			<div class="btn-group">
+				<%= link_to 'Host an Event', new_event_path, class: "btn btn-small btn-success" %>
+			</div>
+		</div>
+	</div>
 
 
-<p>
- <%f.label :event_id%><br>
- <%= f.text_field :event_id %>
-</p>
+</div>
 
-<p>
-<%= f.select(:reason) do %>
-  <% [['General Networking', 1], ['Hiring', 2], ['Job Search', 3]].each do |c| -%>
-    <%= content_tag(:option, c.first, value: c.last) %>
-  <% end %>
-<% end %>
 
-</p>
-
-<%= f.hidden_field :host, :value => false %>
-<p>
-   <%= f.submit %>
- </p>
-
-<% end %>
-
-<%= link_to 'Host an Event', new_event_path %>

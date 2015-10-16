@@ -1,5 +1,9 @@
-<p>
-  <strong>Title:</strong>
+<div class="container">
+    <div class="vertical-center-row">
+        <div align="center">
+
+<p class="lead" >
+  <strong>Event:</strong>
   <%= @event.event_title %>
 </p>
 
@@ -27,18 +31,20 @@
     
   </tr>
 
-  <% @users.each do |user| %>
     <tr>
-      <td><%= user.first_name %></td>
-      <td><%= user.last_name %></td>
-      <td><%= user.company_name %></td>
-      <td><%= user.job_title %></td>
-      
+      <td><%= @event_attendees %></td>  
     </tr>
-  <% end %>
 </table>
 
 
 
-<%= link_to 'Home', events_by_user_path %>
-<%= link_to 'Edit', edit_event_path(@event) %>
+<%= link_to 'Home', events_by_user_path,class: "btn btn-small btn-success"  %>
+<%= link_to 'Edit', edit_event_path(@event),class: "btn btn-small btn-success"  %>
+
+    </div>
+</div>
+</div>
+
+
+
+
