@@ -1,4 +1,7 @@
 class UsersController < ApplicationController
+  before_action :logged_in_user, only: [:index, :edit, :update, :destroy,
+                                        :connected, :connections]
+
   def index
   end
 
@@ -22,6 +25,20 @@ class UsersController < ApplicationController
     else
       render 'new'
     end
+  end
+
+   def connected
+    @title = "Connected"
+    @user  = User.find(params[:id])
+    @users = @user.connected.paginate(page: params[:page])
+    render 'show_connected'
+  end
+
+  def connections
+    @title = "Connections"
+    @user  = User.find(params[:id])
+    @users = @user.connections.paginate(page: params[:page])
+    render 'show_connection'
   end
 
   def destory

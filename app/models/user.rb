@@ -25,6 +25,18 @@ class User < ActiveRecord::Base
   validates :phone, presence: true,numericality: true, length: { :minimum => 10, :maximum => 15 }
   validates_format_of :email,:with => /\A[^@\s]+@([^@\s]+\.)+[^@\s]+\z/
 
+  def connect (connected_user)
+  	connections.create(events: connected_user_id)
+  end
+
+  def disconnect(connected_user)
+  	connections.find_or_create_by(events: connected_user_id).destroy
+  end
+
+  def connected (connected_user)
+  	following.include?(connected_user_id)
+  end
+
 	class << self
 	  def from_omniauth(auth_hash)
 	    user = find_or_create_by(uid: auth_hash['uid'], provider: auth_hash['provider'])
